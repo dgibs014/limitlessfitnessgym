@@ -8,7 +8,7 @@
 <!--Xadd a skip link that skips to the main content -->
 <a class="skip-to-content-link" href="#main">Skip to Main Content</a>
 
-<!-- add correct heading levels -->
+<!--Xadd correct heading levels -->
   <header>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#007BFF" stroke-linecap="round" stroke-linejoin="round" width="75" height="75" stroke-width="1.5">
       <path d="M2 12h1"></path>
@@ -24,8 +24,12 @@
     <a href="#">Join Now</a>
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
-    
-      src="images/facility.jpg"
+    <picture>
+      <source media="(width <= 320px)" srcset="images/facility-320w.jpg">
+      <source media="(width <= 768px)" srcset="images/facility-768w.jpg">
+      <source media="(width >= 1920px)" srcset="images/facility.jpg">
+      <img src="images/facility.jpg" alt="Limitless Fitness facility">
+    </picture>
 
   </header>
   <nav>
