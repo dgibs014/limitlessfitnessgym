@@ -91,19 +91,43 @@
       <section id="membership-form">
         Join Limitless Fitness Today!
         <p>Fill out the form below to kickstart your fitness journey:</p>
-<!--add accessibility to the form-->
+<!--Xadd accessibility to the form-->
         <form method="post" action="https://wp.zybooks.com/form-viewer.php">
-          Full Name
-          Email Address
-          Phone Number
-          Membership Type
-            Select a Membership Option
-            Monthly Membership
-            Annual Membership
-            Family & Group Plans
-          Tell us about your fitness goals:
-          Submit
+          <div title="contact">
+            <label for="fullname">Full Name
+              <span aria-hidden="true" class="required">*</span>
+            </label>
+              <input id="fullname" type="text" placeholder="Full Name" required>
+            <label for="email">Email Address
+              <span aria-hidden="true" class="required">*</span>
+            </label>
+              <input id="email" type="email" required>
+            <label for="phone">Phone Number
+              <span aria-hidden="true" class="required">*</span>
+            </label>
+              <input id="phone" type="tel" required>
+          </div>
+          <div title="membership">
+            <label for="membership">Membership Type
+              <span aria-hidden="true" class="required">*</span>
+            </label>
+              <select id="membership" required>
+                <option value="">Select a Membership Option</option>
+                <option value="Monthly Membership">Monthly Membership</option>
+                <option value="Annual Membership">Annual Membership</option>
+                <option value="Family & Group Plans">Family & Group Plans</option>
+              </select>
+          </div>
+          <div title="goals">
+            <label for="goals">Tell us about your fitness goals:
+            </label>
+              <textarea id="goals" placeholder="Please tell us your fitness goals here"></textarea>
+          </div>
+          <div title="submit">
+            <input id="submit" type="submit" value="Submit">
+          </div>
         </form>
+
       </section>
     </section>
   </main>
