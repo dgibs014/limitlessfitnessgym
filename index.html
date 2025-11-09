@@ -67,9 +67,14 @@
         <li>Specialty Workshops: From functional training to mindfulness sessions.</li>
         <li>Check out our [Class Schedule] for times and detailed descriptions.</li>
       </ul>
-<!-- add alt text where necessary -->
-<!-- add responsive images for resolution switching -->
-        src="images/classes.jpg"
+<!--Xadd alt text where necessary -->
+<!--Xadd responsive images for resolution switching -->
+      <picture>
+        <source media="(width <>= 320px)" srcset="images/classes-320w.jpg">
+        <source media="(width <= 768px)" srcset="images/classes-768w.jpg">
+        <source media="(width >= 1920px)" srcset="images/classes.jpg">
+        <img src="images/classes.jpg" alt="Three people lifting weights in a weight lifting class in black and white">
+      </picture>
 
     </section>
     <section>
@@ -79,8 +84,8 @@
         Ready for a change?
       </p> 
       <a href="#">Book a Free Consultation today!</a>
-<!-- add alt text where necessary -->
-<!-- add responsive images for resolution switching -->
+<!--Xadd alt text where necessary -->
+<!--Xadd responsive images for resolution switching -->
       <picture>
         <source media="(width <>= 320px)" srcset="images/dumbells-320w.jpg">
         <source media="(width <= 768px)" srcset="images/dumbells-768w.jpg">
